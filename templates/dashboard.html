@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+          .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }  
+        </style>
+
+    </head>
+    <body>
+
+        <div id=content>
+            {{ graph_map | safe }}
+        </div>
+
+        <form action="/" method="GET" class='center'>
+          <input type="submit" value="Back" class='center'>
+        </form>
+    </body>
+</html>
