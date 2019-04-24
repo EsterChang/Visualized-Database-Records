@@ -30,11 +30,11 @@ def generateMap(filename, graphtitle='Stat Distribution'):
             else:
                 eDict[row.ethnicity] += 1;
         eDict['multi'] = 0;
-    eTotals = [eDict['a'], eDict['b'], eDict['h'], eDict['w'], eDict['multi\x0b'],total]
+    eTotals = [eDict['a'], eDict['b'], eDict['h'], eDict['w'], eDict['multi'],total]
     total = float(total)
     ePercent = ["{0:.2f}".format(eDict['a']/total * 100) + '%', "{0:.2f}".format(eDict['b']/total * 100) + '%', 
                 "{0:.2f}".format(eDict['h']/total * 100) + '%',"{0:.2f}".format(eDict['w']/total * 100) + '%', 
-                "{0:.2f}".format(eDict['multi\x0b']/total * 100) + '%', '100%']
+                "{0:.2f}".format(eDict['multi']/total * 100) + '%', '100%']
 
     trace2 = go.Table(
         header = dict(values=['ethnicity','total','%'],
